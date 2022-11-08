@@ -1,0 +1,8 @@
+org/ttn/sprintrest2/SwaggerConfig.class
+org/ttn/sprintrest2/entity/UserV2.class
+org/ttn/sprintrest2/Controller.class
+org/ttn/sprintrest2/entity/Name.class
+org/ttn/sprintrest2/service/UserService.class
+org/ttn/sprintrest2/entity/UserV1.class
+org/ttn/sprintrest2/Sprintrest2Application.class
+org/ttn/sprintrest2/entity/User.class
