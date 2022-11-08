@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: com.ttn.SpringJpaHibernate2.jpql.SpringJpaHibernate2ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 1.219 s <<< FAILURE! - in com.ttn.SpringJpaHibernate2.jpql.SpringJpaHibernate2ApplicationTests
+testCreate  Time elapsed: 0.048 s  <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.ttn.SpringJpaHibernate2.jpql.SpringJpaHibernate2ApplicationTests.testCreate(SpringJpaHibernate2ApplicationTests.java:42)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.ttn.SpringJpaHibernate2.jpql.SpringJpaHibernate2ApplicationTests.testCreate(SpringJpaHibernate2ApplicationTests.java:42)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'employee0_.emp_id' in 'field list'
+	at com.ttn.SpringJpaHibernate2.jpql.SpringJpaHibernate2ApplicationTests.testCreate(SpringJpaHibernate2ApplicationTests.java:42)
+
+testPrint  Time elapsed: 0.002 s  <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.ttn.SpringJpaHibernate2.jpql.SpringJpaHibernate2ApplicationTests.testPrint(SpringJpaHibernate2ApplicationTests.java:61)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.ttn.SpringJpaHibernate2.jpql.SpringJpaHibernate2ApplicationTests.testPrint(SpringJpaHibernate2ApplicationTests.java:61)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'employee0_.emp_id' in 'field list'
+	at com.ttn.SpringJpaHibernate2.jpql.SpringJpaHibernate2ApplicationTests.testPrint(SpringJpaHibernate2ApplicationTests.java:61)
+
+testEmployeeUpdateBySalary  Time elapsed: 0.01 s  <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.ttn.SpringJpaHibernate2.jpql.SpringJpaHibernate2ApplicationTests.testEmployeeUpdateBySalary(SpringJpaHibernate2ApplicationTests.java:73)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.ttn.SpringJpaHibernate2.jpql.SpringJpaHibernate2ApplicationTests.testEmployeeUpdateBySalary(SpringJpaHibernate2ApplicationTests.java:73)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'employee0_.emp_salary' in 'field list'
+	at com.ttn.SpringJpaHibernate2.jpql.SpringJpaHibernate2ApplicationTests.testEmployeeUpdateBySalary(SpringJpaHibernate2ApplicationTests.java:73)
+
+testDeleteEmployeeWithMinSalary  Time elapsed: 0.01 s  <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.ttn.SpringJpaHibernate2.jpql.SpringJpaHibernate2ApplicationTests.testDeleteEmployeeWithMinSalary(SpringJpaHibernate2ApplicationTests.java:90)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.ttn.SpringJpaHibernate2.jpql.SpringJpaHibernate2ApplicationTests.testDeleteEmployeeWithMinSalary(SpringJpaHibernate2ApplicationTests.java:90)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'employee0_.emp_salary' in 'field list'
+	at com.ttn.SpringJpaHibernate2.jpql.SpringJpaHibernate2ApplicationTests.testDeleteEmployeeWithMinSalary(SpringJpaHibernate2ApplicationTests.java:90)
+

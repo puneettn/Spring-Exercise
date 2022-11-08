@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.ttn.SpringJpaHibernate2.nativesql.SpringJpaHibernate2ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 4.165 s <<< FAILURE! - in com.ttn.SpringJpaHibernate2.nativesql.SpringJpaHibernate2ApplicationTests
+testCreate  Time elapsed: 0.232 s  <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.ttn.SpringJpaHibernate2.nativesql.SpringJpaHibernate2ApplicationTests.testCreate(SpringJpaHibernate2ApplicationTests.java:38)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.ttn.SpringJpaHibernate2.nativesql.SpringJpaHibernate2ApplicationTests.testCreate(SpringJpaHibernate2ApplicationTests.java:38)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'employee0_.empid' in 'field list'
+	at com.ttn.SpringJpaHibernate2.nativesql.SpringJpaHibernate2ApplicationTests.testCreate(SpringJpaHibernate2ApplicationTests.java:38)
+
+testEmployeeByLastName  Time elapsed: 0.069 s  <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.ttn.SpringJpaHibernate2.nativesql.SpringJpaHibernate2ApplicationTests.testEmployeeByLastName(SpringJpaHibernate2ApplicationTests.java:55)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.ttn.SpringJpaHibernate2.nativesql.SpringJpaHibernate2ApplicationTests.testEmployeeByLastName(SpringJpaHibernate2ApplicationTests.java:55)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'empid' in 'field list'
+	at com.ttn.SpringJpaHibernate2.nativesql.SpringJpaHibernate2ApplicationTests.testEmployeeByLastName(SpringJpaHibernate2ApplicationTests.java:55)
+
+testDeleteEmployeeByAge  Time elapsed: 0.045 s  <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+	at com.ttn.SpringJpaHibernate2.nativesql.SpringJpaHibernate2ApplicationTests.testDeleteEmployeeByAge(SpringJpaHibernate2ApplicationTests.java:67)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
+	at com.ttn.SpringJpaHibernate2.nativesql.SpringJpaHibernate2ApplicationTests.testDeleteEmployeeByAge(SpringJpaHibernate2ApplicationTests.java:67)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'empage' in 'where clause'
+	at com.ttn.SpringJpaHibernate2.nativesql.SpringJpaHibernate2ApplicationTests.testDeleteEmployeeByAge(SpringJpaHibernate2ApplicationTests.java:67)
+

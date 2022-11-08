@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.ttn.SpringJpaHibernate2.inheritencemapping.joinedStrategy.SpringJpaHibernate2JoinedTableApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.834 s <<< FAILURE! - in com.ttn.SpringJpaHibernate2.inheritencemapping.joinedStrategy.SpringJpaHibernate2JoinedTableApplicationTests
+testCreatePayment  Time elapsed: 0.049 s  <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+	at com.ttn.SpringJpaHibernate2.inheritencemapping.joinedStrategy.SpringJpaHibernate2JoinedTableApplicationTests.testCreatePayment(SpringJpaHibernate2JoinedTableApplicationTests.java:41)
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement
+	at com.ttn.SpringJpaHibernate2.inheritencemapping.joinedStrategy.SpringJpaHibernate2JoinedTableApplicationTests.testCreatePayment(SpringJpaHibernate2JoinedTableApplicationTests.java:41)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'mydb.payment' doesn't exist
+	at com.ttn.SpringJpaHibernate2.inheritencemapping.joinedStrategy.SpringJpaHibernate2JoinedTableApplicationTests.testCreatePayment(SpringJpaHibernate2JoinedTableApplicationTests.java:41)
+
+testGetPaymentDetails  Time elapsed: 0.012 s  <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.ttn.SpringJpaHibernate2.inheritencemapping.joinedStrategy.SpringJpaHibernate2JoinedTableApplicationTests.testGetPaymentDetails(SpringJpaHibernate2JoinedTableApplicationTests.java:48)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.ttn.SpringJpaHibernate2.inheritencemapping.joinedStrategy.SpringJpaHibernate2JoinedTableApplicationTests.testGetPaymentDetails(SpringJpaHibernate2JoinedTableApplicationTests.java:48)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'mydb.payment' doesn't exist
+	at com.ttn.SpringJpaHibernate2.inheritencemapping.joinedStrategy.SpringJpaHibernate2JoinedTableApplicationTests.testGetPaymentDetails(SpringJpaHibernate2JoinedTableApplicationTests.java:48)
+

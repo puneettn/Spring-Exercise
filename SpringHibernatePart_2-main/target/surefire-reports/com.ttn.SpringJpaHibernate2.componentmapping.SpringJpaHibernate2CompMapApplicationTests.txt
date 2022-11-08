@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.ttn.SpringJpaHibernate2.componentmapping.SpringJpaHibernate2CompMapApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.837 s <<< FAILURE! - in com.ttn.SpringJpaHibernate2.componentmapping.SpringJpaHibernate2CompMapApplicationTests
+testCreate  Time elapsed: 0.052 s  <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.ttn.SpringJpaHibernate2.componentmapping.SpringJpaHibernate2CompMapApplicationTests.testCreate(SpringJpaHibernate2CompMapApplicationTests.java:37)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.ttn.SpringJpaHibernate2.componentmapping.SpringJpaHibernate2CompMapApplicationTests.testCreate(SpringJpaHibernate2CompMapApplicationTests.java:37)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'mydb.employee_component' doesn't exist
+	at com.ttn.SpringJpaHibernate2.componentmapping.SpringJpaHibernate2CompMapApplicationTests.testCreate(SpringJpaHibernate2CompMapApplicationTests.java:37)
+
+testGetEmployeeRecord  Time elapsed: 0.001 s  <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.ttn.SpringJpaHibernate2.componentmapping.SpringJpaHibernate2CompMapApplicationTests.testGetEmployeeRecord(SpringJpaHibernate2CompMapApplicationTests.java:43)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at com.ttn.SpringJpaHibernate2.componentmapping.SpringJpaHibernate2CompMapApplicationTests.testGetEmployeeRecord(SpringJpaHibernate2CompMapApplicationTests.java:43)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'mydb.employee_component' doesn't exist
+	at com.ttn.SpringJpaHibernate2.componentmapping.SpringJpaHibernate2CompMapApplicationTests.testGetEmployeeRecord(SpringJpaHibernate2CompMapApplicationTests.java:43)
+

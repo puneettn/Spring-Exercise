@@ -1,0 +1,6 @@
+/home/puneet/Spring FrameWork/SpringHibernatePart_2-main/src/test/java/com/ttn/SpringJpaHibernate2/jpql/SpringJpaHibernate2ApplicationTests.java
+/home/puneet/Spring FrameWork/SpringHibernatePart_2-main/src/test/java/com/ttn/SpringJpaHibernate2/inheritencemapping/singleTableStrategy/SpringJpaHibernate2SingleTableApplicationTests.java
+/home/puneet/Spring FrameWork/SpringHibernatePart_2-main/src/test/java/com/ttn/SpringJpaHibernate2/nativesql/SpringJpaHibernate2ApplicationTests.java
+/home/puneet/Spring FrameWork/SpringHibernatePart_2-main/src/test/java/com/ttn/SpringJpaHibernate2/componentmapping/SpringJpaHibernate2CompMapApplicationTests.java
+/home/puneet/Spring FrameWork/SpringHibernatePart_2-main/src/test/java/com/ttn/SpringJpaHibernate2/inheritencemapping/joinedStrategy/SpringJpaHibernate2JoinedTableApplicationTests.java
+/home/puneet/Spring FrameWork/SpringHibernatePart_2-main/src/test/java/com/ttn/SpringJpaHibernate2/inheritencemapping/tablePerClass/SpringJpaHibernate2TablePerClassApplicationTests.java
